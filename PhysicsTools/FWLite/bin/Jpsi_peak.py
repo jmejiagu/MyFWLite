@@ -18,14 +18,13 @@ options.parseArguments()
 
 # use Varparsing object
 events = Events (options)
-#events = Events ('../../JpsiMuMu_miniaod-230-1.root')
+#events = Events ('../../../myFWLite/JpsiMuMu_miniaod-230-1.root')
 
 # create handle outside of loop
 handle  = Handle ("std::vector<pat::Muon>")
 
 # for now, label is just a tuple of strings that is initialized just
 # like and edm::InputTag
-#label = ("selectedLayer1Muons")
 label = ("slimmedMuons")
 
 # Create histograms, etc.
